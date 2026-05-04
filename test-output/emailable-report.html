@@ -8,11 +8,45 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,166</td><td></td><td></td></tr>
+<tr><th colspan="8">My Test Suite</th></tr>
+<tr><td><a href="#t0">Automation Practice</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,773</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestNgAutomation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,982</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">39,755</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.BookFlight.testcases.TestCases</td><td><a href="#m0">searchFlightTickets</a></td><td rowspan="1">1777867734284</td><td rowspan="1">31054</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">My Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Automation Practice &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.jatin.tests.ECommerceTest</td><td><a href="#m0">testAmazon</a></td><td rowspan="1">1777890192434</td><td rowspan="1">8054</td></tr><tr class="passedodd"><td rowspan="1">com.jatin.tests.LoginTest</td><td><a href="#m1">googleSearchValidation</a></td><td rowspan="1">1777890201729</td><td rowspan="1">288</td></tr><tr class="passedeven"><td rowspan="1">com.jatin.tests.MyFirstTest</td><td><a href="#m2">demoTest</a></td><td rowspan="1">1777890192424</td><td rowspan="1">5</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestNgAutomation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.BookFlight.testcases.TestCases</td><td><a href="#m3">searchFlightTickets</a></td><td rowspan="1">1777890195934</td><td rowspan="1">22065</td></tr><tr><th colspan="4">TestNgAutomation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.ZeptoAutomate.TestCaseZepto</td><td><a href="#m4">Zepto</a></td><td rowspan="1">1777890218002</td><td rowspan="1">4140</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.BookFlight.testcases.TestCases#searchFlightTickets</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Automation Practice</h2><h3 id="m0">com.jatin.tests.ECommerceTest#testAmazon</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.jatin.tests.LoginTest#googleSearchValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.jatin.tests.MyFirstTest#demoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestNgAutomation</h2><h3 id="m3">com.BookFlight.testcases.TestCases#searchFlightTickets</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;commonModal__close&apos;]&quot;}
+  (Session info: chrome=147.0.7727.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85776faf17850550ef541b73f37d29fb, findElement {using=xpath, value=//span[@class=&apos;commonModal__close&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\jatin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50808}, goog:processID: 9552, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50808/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 85776faf17850550ef541b73f37d29fb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at com.BookFlight.pom.HomePage.closePopUp(HomePage.java:30)
+	at com.BookFlight.testcases.TestCases.searchFlightTickets(TestCases.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ZeptoAutomate.TestCaseZepto#Zepto</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -40,6 +40,6 @@ public class TestCases {
 
 	@AfterTest
 	public void closeBrowser() {
-//		driver.close(); 
+		driver.close(); 
 	}
 }

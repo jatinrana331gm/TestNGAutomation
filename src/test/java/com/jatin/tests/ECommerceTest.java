@@ -18,5 +18,7 @@ public class ECommerceTest extends BaseTest {
         amazon.searchProduct("iPhone 15");
         
         System.out.println("Test Complete!");
+        
+        driver.quit();
     }
 }

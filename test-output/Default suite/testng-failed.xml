@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.BookFlight.testcases.TestCases">
+      <class name="com.ZeptoAutomate.TestCaseZepto">
         <methods>
-          <include name="searchFlightTickets"/>
-          <include name="launchChromeBrowser"/>
+          <include name="launchbrowser"/>
           <include name="closeBrowser"/>
+          <include name="Zepto"/>
         </methods>
-      </class> <!-- com.BookFlight.testcases.TestCases -->
+      </class> <!-- com.ZeptoAutomate.TestCaseZepto -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
