@@ -18,15 +18,21 @@ public class TestCaseZepto {
 		driver.manage().window().maximize();
 		driver.get("https://www.zepto.com/?srsltid=AfmBOop8sA_At57bLrUeDvYgVxYC63gRxxB6dCN2NnZQNZ8aYiLvrJIF");
 	}
-	
+
 	@Test
 	public void Zepto() throws InterruptedException {
 		Homepage homepage = new Homepage(driver);
 		homepage.ClicksearchFor();
 		homepage.selectSearchItem();
 		homepage.addtoCart();
+
+		homepage.takeScreenshot("after_add_to_cart");
+		homepage.printAllDetailsWithLoop();
+		homepage.takeScreenshot("Loop_Details_Result");
+		homepage.navigationHome();
+		homepage.takeScreenshot("Final_Homepage_View");
 	}
-	
+
 	@AfterTest
 	public void closeBrowser() {
 		driver.quit(); 
