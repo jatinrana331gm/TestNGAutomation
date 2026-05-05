@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ZeptoAutomate.TestCaseZepto">
+      <class name="com.ParaBank.TestCaseLaunch">
         <methods>
-          <include name="launchbrowser"/>
-          <include name="closeBrowser"/>
-          <include name="Zepto"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testHomePage"/>
         </methods>
-      </class> <!-- com.ZeptoAutomate.TestCaseZepto -->
+      </class> <!-- com.ParaBank.TestCaseLaunch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

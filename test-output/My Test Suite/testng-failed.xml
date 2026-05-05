@@ -3,13 +3,13 @@
 <suite thread-count="2" parallel="tests" name="Failed suite [My Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="tests" name="TestNgAutomation(failed)">
     <classes>
-      <class name="com.BookFlight.testcases.TestCases">
+      <class name="com.ZeptoAutomate.TestCaseZepto">
         <methods>
-          <include name="searchFlightTickets"/>
-          <include name="launchChromeBrowser"/>
+          <include name="launchbrowser"/>
           <include name="closeBrowser"/>
+          <include name="Zepto"/>
         </methods>
-      </class> <!-- com.BookFlight.testcases.TestCases -->
+      </class> <!-- com.ZeptoAutomate.TestCaseZepto -->
     </classes>
   </test> <!-- TestNgAutomation(failed) -->
 </suite> <!-- Failed suite [My Test Suite] -->

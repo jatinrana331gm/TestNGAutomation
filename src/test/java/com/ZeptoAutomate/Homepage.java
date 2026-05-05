@@ -36,10 +36,11 @@ public class Homepage {
 	// print details
 	By allDetails = By.xpath("//div[@class='__9M1qu']");
 
-	public void ClicksearchFor() throws InterruptedException {
-		driver.findElement(searchclcikBox).click();
-		Thread.sleep(2000);
-		driver.findElement(enterSeearchText).sendKeys("iphone 17" + Keys.ENTER);
+	public void ClicksearchFor() {
+		wait.until(ExpectedConditions.elementToBeClickable(searchclcikBox)).click();
+//		driver.findElement(searchclcikBox).click();
+		wait.until(ExpectedConditions.elementToBeClickable(enterSeearchText)).sendKeys("iphone 17" + Keys.ENTER);
+//		driver.findElement(enterSeearchText).sendKeys("iphone 17" + Keys.ENTER);
 	}
 
 	public void selectSearchItem() {

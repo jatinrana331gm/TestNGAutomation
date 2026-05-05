@@ -20,22 +20,28 @@ public class TestCaseZepto {
 	}
 
 	@Test
-	public void Zepto() throws InterruptedException {
+	public void Zepto() {
 		Homepage homepage = new Homepage(driver);
-		homepage.ClicksearchFor();
-		homepage.selectSearchItem();
-		homepage.addtoCart();
 
-		homepage.takeScreenshot("after_add_to_cart");
+		homepage.ClicksearchFor();
+		homepage.takeScreenshot("1_Search_Initiated");
+
+		homepage.selectSearchItem();
+		homepage.takeScreenshot("2_Item_Selected");
+
+		homepage.addtoCart();
+		homepage.takeScreenshot("3_Added_To_Cart");
+
 		homepage.printAllDetailsWithLoop();
-		homepage.takeScreenshot("Loop_Details_Result");
+		homepage.takeScreenshot("4_Details_Logged");
+
 		homepage.navigationHome();
-		homepage.takeScreenshot("Final_Homepage_View");
+		homepage.takeScreenshot("5_Final_Home_View");
 	}
 
 	@AfterTest
 	public void closeBrowser() {
-		driver.quit(); 
+		driver.quit();
 	}
 
 }
