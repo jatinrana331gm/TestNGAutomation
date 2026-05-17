@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ParaBank.TestCaseLaunch">
+      <class name="com.BookFlight.testcases.TestCases">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="testHomePage"/>
+          <include name="searchFlightTickets"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.ParaBank.TestCaseLaunch -->
+      </class> <!-- com.BookFlight.testcases.TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="My Test Suite" parallel="tests" thread-count="2">
+<suite name="MultiDomainAutomationSuite">
 
-	<test name="Automation Practice">
+	<test name="Amazon-Practice-Tests">
 		<classes>
-			<class name="com.jatin.tests.MyFirstTest" />
-			<class name="com.jatin.tests.LoginTest" />
 			<class name="com.jatin.tests.ECommerceTest" />
 		</classes>
 	</test>
 
-	<test name="TestNgAutomation">
+	<test name="ParaBank-Banking-Tests">
 		<classes>
-			<class name="com.BookFlight.testcases.TestCases" />
+			<class name="com.ParaBank.TestCaseLaunch" />
+		</classes>
+	</test>
+
+	<test name="Zepto-Ecommerce-Tests">
+		<classes>
 			<class name="com.ZeptoAutomate.TestCaseZepto" />
 		</classes>
 	</test>
 
-</suite>  
+	<test name="BookFlight-Travel-Tests">
+		<classes>
+			<class name="com.BookFlight.testcases.TestCases" />
+		</classes>
+	</test>
+
+</suite>

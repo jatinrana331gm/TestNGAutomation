@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-05T12:21:40 IST" name="Default suite" finished-at="2026-05-05T12:21:46 IST" duration-ms="5282">
+  <suite started-at="2026-05-17T21:45:07 IST" name="MultiDomainAutomationSuite" finished-at="2026-05-17T21:46:16 IST" duration-ms="69076">
     <groups>
     </groups>
-    <test started-at="2026-05-05T12:21:40 IST" name="Default test" finished-at="2026-05-05T12:21:46 IST" duration-ms="5282">
+    <test started-at="2026-05-17T21:45:07 IST" name="Amazon-Practice-Tests" finished-at="2026-05-17T21:45:23 IST" duration-ms="16422">
+      <class name="com.jatin.tests.ECommerceTest">
+        <test-method signature="testAmazon()[pri:0, instance:com.jatin.tests.ECommerceTest@9353778]" started-at="2026-05-17T21:45:07 IST" name="testAmazon" finished-at="2026-05-17T21:45:23 IST" duration-ms="16377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazon -->
+      </class> <!-- com.jatin.tests.ECommerceTest -->
+    </test> <!-- Amazon-Practice-Tests -->
+    <test started-at="2026-05-17T21:45:23 IST" name="ParaBank-Banking-Tests" finished-at="2026-05-17T21:45:32 IST" duration-ms="8789">
       <class name="com.ParaBank.TestCaseLaunch">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ParaBank.TestCaseLaunch@1817d444]" started-at="2026-05-05T12:21:40 IST" name="setup" finished-at="2026-05-05T12:21:43 IST" duration-ms="2503" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ParaBank.TestCaseLaunch@4f6ee6e4]" started-at="2026-05-17T21:45:23 IST" name="setup" finished-at="2026-05-17T21:45:28 IST" duration-ms="4130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHomePage()[pri:0, instance:com.ParaBank.TestCaseLaunch@1817d444]" started-at="2026-05-05T12:21:43 IST" name="testHomePage" finished-at="2026-05-05T12:21:45 IST" duration-ms="2600" status="PASS">
+        <test-method signature="testHomePage()[pri:0, instance:com.ParaBank.TestCaseLaunch@4f6ee6e4]" started-at="2026-05-17T21:45:28 IST" name="testHomePage" finished-at="2026-05-17T21:45:32 IST" duration-ms="4455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ParaBank.TestCaseLaunch@1817d444]" started-at="2026-05-05T12:21:45 IST" name="teardown" finished-at="2026-05-05T12:21:46 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ParaBank.TestCaseLaunch@4f6ee6e4]" started-at="2026-05-17T21:45:32 IST" name="teardown" finished-at="2026-05-17T21:45:32 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.ParaBank.TestCaseLaunch -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ParaBank-Banking-Tests -->
+    <test started-at="2026-05-17T21:45:32 IST" name="Zepto-Ecommerce-Tests" finished-at="2026-05-17T21:45:44 IST" duration-ms="11646">
+      <class name="com.ZeptoAutomate.TestCaseZepto">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.ZeptoAutomate.TestCaseZepto@6d763516]" started-at="2026-05-17T21:45:32 IST" name="launchbrowser" finished-at="2026-05-17T21:45:37 IST" duration-ms="5025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="Zepto()[pri:0, instance:com.ZeptoAutomate.TestCaseZepto@6d763516]" started-at="2026-05-17T21:45:37 IST" name="Zepto" finished-at="2026-05-17T21:45:44 IST" duration-ms="6303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Zepto -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ZeptoAutomate.TestCaseZepto@6d763516]" started-at="2026-05-17T21:45:44 IST" name="closeBrowser" finished-at="2026-05-17T21:45:44 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ZeptoAutomate.TestCaseZepto -->
+    </test> <!-- Zepto-Ecommerce-Tests -->
+    <test started-at="2026-05-17T21:45:44 IST" name="BookFlight-Travel-Tests" finished-at="2026-05-17T21:46:16 IST" duration-ms="32186">
+      <class name="com.BookFlight.testcases.TestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.BookFlight.testcases.TestCases@595b007d]" started-at="2026-05-17T21:45:44 IST" name="launchBrowser" finished-at="2026-05-17T21:45:52 IST" duration-ms="7721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="searchFlightTickets()[pri:0, instance:com.BookFlight.testcases.TestCases@595b007d]" started-at="2026-05-17T21:45:52 IST" name="searchFlightTickets" finished-at="2026-05-17T21:46:15 IST" duration-ms="23427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlightTickets -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BookFlight.testcases.TestCases@595b007d]" started-at="2026-05-17T21:46:15 IST" name="closeBrowser" finished-at="2026-05-17T21:46:16 IST" duration-ms="1032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.BookFlight.testcases.TestCases -->
+    </test> <!-- BookFlight-Travel-Tests -->
+  </suite> <!-- MultiDomainAutomationSuite -->
 </testng-results>

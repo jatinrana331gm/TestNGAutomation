@@ -1,14 +1,12 @@
 package com.BookFlight.testcases;
 
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.BookFlight.pom.HomePage;
 
 public class TestCases {
@@ -16,12 +14,16 @@ public class TestCases {
 	WebDriver driver;
 
 	@BeforeTest
-	public void launchChromeBrowser() {
-		driver = new ChromeDriver();
+	public void launchBrowser() {
+		FirefoxOptions options = new FirefoxOptions();
+		options.addPreference("dom.webdriver.enabled", false);
+		options.addPreference("useAutomationExtension", false);
+
+		driver = new FirefoxDriver(options);
+
 		driver.get("https://www.makemytrip.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();
-
 	}
 
 	@Test
@@ -35,11 +37,12 @@ public class TestCases {
 		homepage.selectDepartureDate();
 		homepage.selectReturnDate();
 		homepage.clickSearchButton();
-
 	}
 
 	@AfterTest
 	public void closeBrowser() {
-		driver.close(); 
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 }
